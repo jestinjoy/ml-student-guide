@@ -1,20 +1,25 @@
 cat > .gitignore <<'EOF'
-# virtualenv
+# Python virtual environments
 venv/
 env/
 ENV/
 
-# Python caches / compiled
+# Bytecode / cache
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
 
-# Editor / OS
-.DS_Store
+# Editors / OS
 .vscode/
 .idea/
+.DS_Store
 
-# build / output
-_build/
+# Build outputs: ignore everything in _build except the compiled html we want to publish
+_build/*
+!_build/html/
+!_build/html/**
+
+# Distribution / packaging
 dist/
 *.egg-info/
 
