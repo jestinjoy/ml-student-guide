@@ -4,7 +4,7 @@ parts:
   - caption: Module 1 - Introduction to Machine Learning
     chapters:
       - file: content/01-intro
-      - file: content/02-linear-algebra
+      - file: content/01-applications
   - caption: Module 2 — Supervised and Unsupervised Learning
     chapters:
       - file: content/03-supervised-learning
