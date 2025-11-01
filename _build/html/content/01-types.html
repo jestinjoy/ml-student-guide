@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>MG4DSEBCA201 - Introduction to Machine Learning &#8212; Introduction to Machine Learning — Student Guide</title>
+    <title>Types of Machine Learning &#8212; Introduction to Machine Learning — Student Guide</title>
   
   
   
@@ -57,10 +57,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/01-types';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction" href="01-intro.html" />
+    <link rel="next" title="03 — Supervised Learning" href="03-supervised-learning.html" />
+    <link rel="prev" title="Applications" href="01-applications.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,8 +124,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -143,7 +142,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -168,17 +167,17 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
                     MG4DSEBCA201 -  Introduction to Machine Learning
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 1 - Introduction to Machine Learning</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01-intro.html"><strong>Introduction</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="01-applications.html"><strong>Applications</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="01-types.html"><strong>Types of Machine Learning</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Types of Machine Learning</strong></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 2 — Supervised and Unsupervised Learning</span></p>
 <ul class="nav bd-sidenav">
@@ -241,7 +240,7 @@
       
       
       
-      <li><a href="../_sources/content/index.md" target="_blank"
+      <li><a href="../_sources/content/01-types.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -325,7 +324,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>MG4DSEBCA201 -  Introduction to Machine Learning</h1>
+    <h1>Types of Machine Learning</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -335,18 +334,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-1-introduction-to-machine-learning"><span class="xref myst"><strong>Module 1 — Introduction to Machine Learning</strong></span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-2-supervised-and-unsupervised-learning"><strong>Module 2 — Supervised and Unsupervised Learning</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning"><strong>Supervised Learning</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning"><strong>Unsupervised Learning</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-and-ethics"><strong>Applications and Ethics</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-3-practical-experiments-and-implementations"><strong>Module 3 — Practical Experiments and Implementations</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-tasks"><strong>Implementation Tasks</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-tasks"><strong>Advanced Tasks</strong></a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning"><strong>Supervised Learning</strong></a></li>
 </ul>
             </nav>
         </div>
@@ -358,133 +346,23 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="mg4dsebca201-introduction-to-machine-learning">
-<h1><strong>MG4DSEBCA201 -  Introduction to Machine Learning</strong><a class="headerlink" href="#mg4dsebca201-introduction-to-machine-learning" title="Link to this heading">#</a></h1>
-<section id="module-1-introduction-to-machine-learning">
-<h2><a class="reference internal" href="01-intro.html"><span class="std std-doc"><strong>Module 1 — Introduction to Machine Learning</strong></span></a><a class="headerlink" href="#module-1-introduction-to-machine-learning" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Introduction</strong></p>
-<ul>
-<li><p>Definition, History, and Applications of Machine Learning</p></li>
-</ul>
-</li>
-<li><p><strong>Types of Machine Learning</strong></p>
-<ul>
+  <section id="types-of-machine-learning">
+<h1><strong>Types of Machine Learning</strong><a class="headerlink" href="#types-of-machine-learning" title="Link to this heading">#</a></h1>
+<p>Machine Learning can be divided into four main types based on the nature of the data and the way the system learns from it. These are:</p>
+<ol class="arabic simple">
 <li><p>Supervised Learning</p></li>
 <li><p>Unsupervised Learning</p></li>
 <li><p>Semi-Supervised Learning</p></li>
 <li><p>Reinforcement Learning</p></li>
-</ul>
-</li>
-<li><p><strong>Datasets</strong></p>
-<ul>
-<li><p>Labeled and Unlabeled Datasets</p></li>
-</ul>
-</li>
-<li><p><strong>Supervised Learning Tasks</strong></p>
-<ul>
-<li><p>Regression vs. Classification</p></li>
-</ul>
-</li>
-<li><p><strong>Learning Framework</strong></p>
-<ul>
-<li><p>Training, Validation, and Testing of ML Models</p></li>
-</ul>
-</li>
-<li><p><strong>Performance Evaluation Parameters</strong></p>
-<ul>
-<li><p>Confusion Matrix</p></li>
-<li><p>Accuracy</p></li>
-<li><p>Precision</p></li>
-<li><p>Recall</p></li>
-<li><p>F1 Score</p></li>
-<li><p>Area Under the Curve (AUC)</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="module-2-supervised-and-unsupervised-learning">
-<h2><strong>Module 2 — Supervised and Unsupervised Learning</strong><a class="headerlink" href="#module-2-supervised-and-unsupervised-learning" title="Link to this heading">#</a></h2>
-<section id="supervised-learning">
-<h3><strong>Supervised Learning</strong><a class="headerlink" href="#supervised-learning" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>Regression</strong></p>
-<ul>
-<li><p>Linear and Non-Linear Regression</p></li>
-<li><p>Logistic Regression</p></li>
-</ul>
-</li>
-<li><p><strong>Classification</strong></p>
-<ul>
-<li><p>Naïve Bayes</p></li>
-<li><p>K-Nearest Neighbors (KNN)</p></li>
-<li><p>Decision Trees (ID3 / CART)</p></li>
-</ul>
-</li>
-<li><p><strong>Linear Models</strong></p>
-<ul>
-<li><p>Introduction to Artificial Neural Networks</p></li>
-<li><p>Perceptron Learning Algorithm</p></li>
-<li><p>Single-Layer Perceptron</p></li>
-<li><p>Introduction to Support Vector Machine (SVM) for linearly separable data</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="unsupervised-learning">
-<h3><strong>Unsupervised Learning</strong><a class="headerlink" href="#unsupervised-learning" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>Clustering Algorithms</strong></p>
-<ul>
-<li><p>K-Means</p></li>
-<li><p>Hierarchical Clustering</p></li>
-<li><p>DBSCAN</p></li>
-</ul>
-</li>
-<li><p><strong>Clustering Validation Measures</strong></p></li>
-</ul>
-</section>
-<section id="applications-and-ethics">
-<h3><strong>Applications and Ethics</strong><a class="headerlink" href="#applications-and-ethics" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Ethical Considerations in Machine Learning</p></li>
-<li><p>Case Studies and Real-world Applications</p></li>
-</ul>
-</section>
-</section>
-<hr class="docutils" />
-<section id="module-3-practical-experiments-and-implementations">
-<h2><strong>Module 3 — Practical Experiments and Implementations</strong><a class="headerlink" href="#module-3-practical-experiments-and-implementations" title="Link to this heading">#</a></h2>
-<section id="implementation-tasks">
-<h3><strong>Implementation Tasks</strong><a class="headerlink" href="#implementation-tasks" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Implement <strong>Linear Regression</strong> on a dataset and visualize the regression line.</p></li>
-<li><p>Implement <strong>Logistic Regression</strong> on a binary classification dataset and plot the decision boundary.</p></li>
-<li><p>Implement and evaluate <strong>Decision Tree (ID3/CART)</strong> classifier for a given dataset.</p></li>
-<li><p>Implement and evaluate the <strong>Naïve Bayes Classifier</strong> on a given dataset.</p></li>
-<li><p>Implement <strong>K-Means Clustering</strong> on a dataset, visualize, and evaluate the clusters.</p></li>
-<li><p>Implement <strong>Hierarchical Clustering</strong> and plot the dendrogram.</p></li>
-<li><p>Implement <strong>DBSCAN Clustering</strong>, visualize, and evaluate the clusters.</p></li>
-<li><p>Perform <strong>Principal Component Analysis (PCA)</strong> and apply classifiers to compare performance with and without feature reduction.</p></li>
-<li><p>Build and evaluate a <strong>Random Forest Classifier</strong> using a numerical dataset.</p></li>
-<li><p>Implement a <strong>Support Vector Machine (SVM)</strong> for linearly separable classes and visualize margins and decision boundaries.</p></li>
 </ol>
-</section>
-<section id="advanced-tasks">
-<h3><strong>Advanced Tasks</strong><a class="headerlink" href="#advanced-tasks" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Build a <strong>Single-Layer Perceptron Model</strong> to classify <strong>AND</strong>, <strong>OR</strong>, and <strong>XOR</strong> problems (using TensorFlow/Keras) and visualize their decision boundaries. Evaluate performance.</p></li>
-<li><p>Demonstrate the concept of <strong>Boosting</strong> using the <strong>AdaBoost Algorithm</strong>.</p></li>
-</ul>
-</section>
-</section>
-<div class="toctree-wrapper compound">
+<p>Each type follows a different learning approach.</p>
+<section id="supervised-learning">
+<h2><strong>Supervised Learning</strong><a class="headerlink" href="#supervised-learning" title="Link to this heading">#</a></h2>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Machine Learning (ML) is a branch of Artificial Intelligence that enables computers to learn from data and improve their performance without being explicitly programmed.
+```It involves developing algorithms and models that can identify patterns in data and make predictions or decisions automatically.
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -517,12 +395,21 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="01-applications.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>Applications</strong></p>
+      </div>
+    </a>
     <a class="right-next"
-       href="01-intro.html"
+       href="03-supervised-learning.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Introduction</strong></p>
+        <p class="prev-next-title">03 — Supervised Learning</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -542,18 +429,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-1-introduction-to-machine-learning"><span class="xref myst"><strong>Module 1 — Introduction to Machine Learning</strong></span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-2-supervised-and-unsupervised-learning"><strong>Module 2 — Supervised and Unsupervised Learning</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning"><strong>Supervised Learning</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning"><strong>Unsupervised Learning</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-and-ethics"><strong>Applications and Ethics</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-3-practical-experiments-and-implementations"><strong>Module 3 — Practical Experiments and Implementations</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-tasks"><strong>Implementation Tasks</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-tasks"><strong>Advanced Tasks</strong></a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning"><strong>Supervised Learning</strong></a></li>
 </ul>
   </nav></div>
 
