@@ -1,0 +1,14 @@
+format: jb-book
+root: content/index
+parts:
+  - caption: Module 1 - Introduction to Machine Learning
+    chapters:
+      - file: content/01-intro
+      - file: content/02-linear-algebra
+  - caption: Module 2 — Supervised and Unsupervised Learning
+    chapters:
+      - file: content/03-supervised-learning
+  - caption: Module 3 — Practical Experiments and Implementations
+    chapters:
+      - file: content/04-supervised-learning
+

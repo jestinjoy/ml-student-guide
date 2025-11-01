@@ -1,0 +1,46 @@
+name: Build and Deploy Jupyter Book
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}  # allow manual trigger from Actions tab
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # needed for gh-pages deploy history
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jupyter-book
+          # add other extensions if your book needs them, e.g.:
+          # pip install myst-parser sphinx-copybutton
+
+      - name: Build Jupyter Book
+        run: jb build .
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_build/html
+          # keep_files: false  # uncomment if you want to always overwrite everything

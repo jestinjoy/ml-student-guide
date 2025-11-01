@@ -1,0 +1,16 @@
+name: ml-student-guide
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - jupyterlab
+  - jupyter-book
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - pip
+  - pip:
+    - notebook
